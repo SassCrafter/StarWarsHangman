@@ -1,0 +1,113 @@
+$yellow: #ffe919;
+
+@font-face {
+    font-family: 'Distant Galaxy';
+    src: url('../font/DG.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    background: url('../img/star-wars-wallpaper.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    //margin-top: 10rem;
+    width: 90%;
+    max-width: 50rem;
+    text-align: center;
+    border: .8rem outset white;
+    padding: 3rem 1rem;
+    background: black;
+
+    &__title {
+        font-family: 'Distant Galaxy';
+        font-size: 4rem;
+        letter-spacing: .6rem;
+        text-transform: uppercase;
+        color: black;
+        text-shadow: -.1rem 0 $yellow, 0 .2rem $yellow, .2rem 0 $yellow, 0 -.1rem $yellow;
+        margin-bottom: 3rem;
+    }
+
+    &__word {
+        margin-bottom: 3rem;
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+
+            li {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__buttons {
+        margin-bottom: 3rem;
+
+        ul {
+            max-width: 35rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0 auto;
+            
+
+            li {
+                //padding: .5rem;
+                width: 3rem;
+                height: 3rem;
+                line-height: 3rem;
+                border-radius: .5rem;
+                background: white;
+                color: black;
+                margin-right: .5rem;
+                margin-bottom: .5rem;
+                cursor: pointer;
+                transition: all 250ms linear;
+
+                &:hover:not(.correct-guess),
+                &:not(.wrong-guess):hover 
+                 {
+                    opacity: .7;
+                }
+
+                &.correct-guess {
+                    background: #7bc043;
+                    color: white;
+                }
+                &.wrong-guess {
+                    background: #ee4035;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        &__title {
+            font-size: 6rem;
+        }
+    }
+}
+

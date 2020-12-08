@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Distant Galaxy";
+  src: url("../font/DG.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Nanum Gothic", sans-serif;
+  background: url("../img/star-wars-wallpaper.jpg") no-repeat center
+    center/cover;
+  min-height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.game {
+  width: 90%;
+  max-width: 50rem;
+  text-align: center;
+  border: 0.8rem outset white;
+  padding: 3rem 1rem;
+  background: black;
+}
+
+.game__title {
+  font-family: "Distant Galaxy";
+  font-size: 4rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: -0.1rem 0 #ffe919, 0 0.2rem #ffe919, 0.2rem 0 #ffe919,
+    0 -0.1rem #ffe919;
+  margin-bottom: 3rem;
+}
+
+.game__word {
+  margin-bottom: 3rem;
+}
+
+.game__word ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.game__word ul li {
+  margin-right: 1rem;
+}
+
+.game__buttons {
+  margin-bottom: 3rem;
+}
+
+.game__buttons ul {
+  max-width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.game__buttons ul li {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  background: white;
+  color: black;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+}
+
+.game__buttons ul li:hover:not(.correct-guess),
+.game__buttons ul li:not(.wrong-guess):hover {
+  opacity: 0.7;
+}
+
+.game__buttons ul li.correct-guess {
+  background: #7bc043;
+  color: white;
+}
+
+.game__buttons ul li.wrong-guess {
+  background: #ee4035;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .game__title {
+    font-size: 6rem;
+  }
+}
