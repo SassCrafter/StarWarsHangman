@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Distant Galaxy";
+  font-family: 'Distant Galaxy';
   src: url("../font/DG.ttf") format("truetype");
 }
 
@@ -8,7 +8,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -18,19 +17,12 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Nanum Gothic", sans-serif;
-  background: url("../img/star-wars-wallpaper.jpg") no-repeat center
-    center/cover;
+  font-family: 'Nanum Gothic', sans-serif;
+  background: url("../img/star-wars-wallpaper.jpg") no-repeat center center/cover;
   min-height: 100vh;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -38,19 +30,18 @@ body {
   width: 90%;
   max-width: 50rem;
   text-align: center;
-  border: 0.8rem outset white;
+  border: .8rem outset white;
   padding: 3rem 1rem;
   background: black;
 }
 
 .game__title {
-  font-family: "Distant Galaxy";
+  font-family: 'Distant Galaxy';
   font-size: 4rem;
-  letter-spacing: 0.6rem;
+  letter-spacing: .6rem;
   text-transform: uppercase;
   color: black;
-  text-shadow: -0.1rem 0 #ffe919, 0 0.2rem #ffe919, 0.2rem 0 #ffe919,
-    0 -0.1rem #ffe919;
+  text-shadow: -0.1rem 0 #ffe919, 0 0.2rem #ffe919, 0.2rem 0 #ffe919, 0 -0.1rem #ffe919;
   margin-bottom: 3rem;
 }
 
@@ -59,12 +50,8 @@ body {
 }
 
 .game__word ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -78,13 +65,8 @@ body {
 
 .game__buttons ul {
   max-width: 35rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   margin: 0 auto;
@@ -94,24 +76,21 @@ body {
   width: 3rem;
   height: 3rem;
   line-height: 3rem;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   background: white;
   color: black;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
   cursor: pointer;
-  -webkit-transition: all 250ms linear;
-  -o-transition: all 250ms linear;
   transition: all 250ms linear;
 }
 
-.game__buttons ul li:hover:not(.correct-guess),
-.game__buttons ul li:not(.wrong-guess):hover {
-  opacity: 0.7;
+.game__buttons ul li:hover:not(.correct-guess), .game__buttons ul li:not(.wrong-guess):hover {
+  opacity: .7;
 }
 
 .game__buttons ul li.guess {
-  opacity: 0.4 !important;
+  opacity: .4 !important;
   pointer-events: none;
 }
 
@@ -119,15 +98,13 @@ body {
   display: inline-block;
   cursor: pointer;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   outline: none;
   font-size: 1.8rem;
   text-transform: capitalize;
   background: black;
   color: white;
   padding: 1.5rem;
-  -webkit-transition: color 300ms linear, background-color 300ms linear;
-  -o-transition: color 300ms linear, background-color 300ms linear;
   transition: color 300ms linear, background-color 300ms linear;
 }
 
@@ -157,3 +134,4 @@ body {
   padding: 1.5rem;
   margin-bottom: 2rem;
 }
+/*# sourceMappingURL=main.css.map */
