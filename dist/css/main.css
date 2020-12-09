@@ -110,18 +110,50 @@ body {
   opacity: 0.7;
 }
 
-.game__buttons ul li.correct-guess {
-  background: #7bc043;
-  color: white;
+.game__buttons ul li.guess {
+  opacity: 0.4 !important;
+  pointer-events: none;
 }
 
-.game__buttons ul li.wrong-guess {
-  background: #ee4035;
+.game__restart-btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  background: black;
   color: white;
+  padding: 1.5rem;
+  -webkit-transition: color 300ms linear, background-color 300ms linear;
+  -o-transition: color 300ms linear, background-color 300ms linear;
+  transition: color 300ms linear, background-color 300ms linear;
+}
+
+.game__restart-btn:hover {
+  background: white;
+  color: black;
+}
+
+.game .message {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 768px) {
   .game__title {
     font-size: 6rem;
   }
+}
+
+#stickman {
+  max-width: 90%;
+  color: white;
+  border: 2px dashed white;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }

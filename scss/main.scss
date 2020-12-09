@@ -91,23 +91,55 @@ body {
                     opacity: .7;
                 }
 
-                &.correct-guess {
-                    background: #7bc043;
-                    color: white;
-                }
-                &.wrong-guess {
-                    background: #ee4035;
-                    color: white;
+                &.guess {
+                    opacity: .4 !important;
+                    pointer-events: none;
                 }
             }
         }
     }
 
 
+    &__restart-btn {
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        border-radius: .5rem;
+        outline: none;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        background: black;
+        color: white;
+        padding: 1.5rem;
+        transition: color 300ms linear, background-color 300ms linear;
+
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+
+    .message {
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 3rem;
+    }
+
     @media screen and (min-width: 768px) {
         &__title {
             font-size: 6rem;
         }
     }
+}
+
+
+#stickman {
+    max-width: 90%;
+    color: white;
+    border: 2px dashed white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
